@@ -9,16 +9,12 @@ CodE Alltag<sub>XL</sub> has been extracted from Usenet newsgroups and underwent
 The dataset is available in two formats:
 
 1. **Individual Text Files**: Original format with 240,673 emails stored as separate `.txt` files in a hierarchical directory structure (directories `1-` through `9-`)
-2. **CSV Format**: All emails consolidated in a single CSV file (`emails_dataset.csv`) with columns for file_id, directory, and email_text. See [CSV_FORMAT.md](CSV_FORMAT.md) for detailed documentation.
+2. **CSV Format**: All emails consolidated in a single CSV file (`emails_dataset.csv`, ~88MB) with columns for file_id, directory, and email_text. See [CSV_FORMAT.md](CSV_FORMAT.md) for detailed documentation.
 
-### Converting to CSV
-
-To regenerate the CSV file from the text files, run:
+The CSV file is included in the repository and can be downloaded directly. Alternatively, to regenerate the CSV file from the text files, run:
 ```bash
 python3 convert_to_csv.py
 ```
-
-This will create `emails_dataset.csv` containing all 240,673 emails.
 
 CodE Alltag<sub>XL</sub> is further described in the following papers:
 
