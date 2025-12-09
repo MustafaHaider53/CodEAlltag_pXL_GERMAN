@@ -8,7 +8,7 @@ CodE Alltag<sub>XL</sub> has been extracted from Usenet newsgroups and underwent
 
 The dataset is available in two formats:
 
-1. **Individual Text Files**: Original format with ~240,673 emails stored as separate `.txt` files in a hierarchical directory structure (directories `1-` through `9-`)
+1. **Individual Text Files**: Original format with 240,673 emails stored as separate `.txt` files in a hierarchical directory structure (directories `1-` through `9-`)
 2. **CSV Format**: All emails consolidated in a single CSV file (`emails_dataset.csv`) with columns for file_id, directory, and email_text. See [CSV_FORMAT.md](CSV_FORMAT.md) for detailed documentation.
 
 ### Converting to CSV

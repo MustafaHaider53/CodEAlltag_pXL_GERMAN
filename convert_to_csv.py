@@ -9,6 +9,9 @@ import csv
 import sys
 from pathlib import Path
 
+# Progress reporting interval (number of emails processed before showing update)
+PROGRESS_INTERVAL = 1000
+
 
 def find_all_txt_files(base_dir):
     """
@@ -73,7 +76,7 @@ def convert_to_csv(base_dir, output_file='emails_dataset.csv'):
                 count += 1
                 
                 # Progress indicator
-                if count % 1000 == 0:
+                if count % PROGRESS_INTERVAL == 0:
                     print(f"Processed {count} emails...", file=sys.stderr)
                     
             except Exception as e:
