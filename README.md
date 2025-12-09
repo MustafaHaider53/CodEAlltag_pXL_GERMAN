@@ -4,6 +4,18 @@ CodE Alltag<sub>XL</sub> GERMAN is part of CodE Alltag, a German-language email 
 
 CodE Alltag<sub>XL</sub> has been extracted from Usenet newsgroups and underwent merely rudimentary data cleansing. Although no demographic information on the authors has been collected, CodE Alltag<sub>XL</sub> is likely to contain a gender bias since taggers recognized more mentions of male given names (either authors or persons written about).
 
+## Data Formats
+
+The dataset is available in two formats:
+
+1. **Individual Text Files**: Original format with 240,673 emails stored as separate `.txt` files in a hierarchical directory structure (directories `1-` through `9-`)
+2. **CSV Format**: All emails consolidated in a single CSV file (`emails_dataset.csv`, ~88MB) with columns for file_id, directory, and email_text. See [CSV_FORMAT.md](CSV_FORMAT.md) for detailed documentation.
+
+The CSV file is included in the repository and can be downloaded directly. Alternatively, to regenerate the CSV file from the text files, run:
+```bash
+python3 convert_to_csv.py
+```
+
 CodE Alltag<sub>XL</sub> is further described in the following papers:
 
 ```
